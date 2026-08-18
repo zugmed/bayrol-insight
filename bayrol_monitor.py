@@ -6,14 +6,20 @@ Bayrol Insight
 Minimal proof of concept.
 """
 
-VERSION = "0.1.0"
+from config import VERSION, CLIENT_NAME, BROKER, PORT
 
 
 def main():
+
     print("=" * 40)
-    print("Bayrol Insight")
+    print(CLIENT_NAME)
     print(f"Version {VERSION}")
     print("=" * 40)
+
+    print(f"Broker : {BROKER}")
+    print(f"Port   : {PORT}")
+
+    print()
     print("Starting...")
 
 
